@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SMIRNOFF version="0.3" aromaticity_model="OEAroModel_MDL">
+    <vdW version="0.4" potential="Lennard-Jones-12-6" combining_rules="Lorentz-Berthelot" scale12="0.0" scale13="0.0" scale14="0.5" scale15="1.0" cutoff="9.0 * angstrom ** 1" switch_width="1.0 * angstrom ** 1" periodic_method="cutoff" nonperiodic_method="no-cutoff">
+        <Atom smirks="[#1]-[#8X2H2+0:1]-[#1]" epsilon="0.6357142857142857 * kilojoule_per_mole ** 1" id="n-tip3p-O" sigma="3.2030612244897956 * angstrom ** 1"></Atom>
+        <Atom smirks="[#1:1]-[#8X2H2+0]-[#1]" epsilon="0.0 * kilocalorie_per_mole ** 1" id="n-tip3p-H" sigma="1.0 * nanometer ** 1"></Atom>
+    </vdW>
+    <LibraryCharges version="0.3">
+        <LibraryCharge smirks="[#1]-[#8X2H2+0:1]-[#1]" charge1="-0.834 * elementary_charge ** 1" id="q-tip3p-O"></LibraryCharge>
+        <LibraryCharge smirks="[#1:1]-[#8X2H2+0]-[#1]" charge1="0.417 * elementary_charge ** 1" id="q-tip3p-H"></LibraryCharge>
+    </LibraryCharges>
+    <Electrostatics version="0.4" scale12="0.0" scale13="0.0" scale14="0.8333333333" scale15="1.0" cutoff="9.0 * angstrom ** 1" switch_width="0.0 * angstrom ** 1" periodic_potential="Ewald3D-ConductingBoundary" nonperiodic_potential="Coulomb" exception_potential="Coulomb"></Electrostatics>
+    <Constraints version="0.3">
+        <Constraint smirks="[#1:1]-[#8X2H2+0:2]-[#1]" id="c-tip3p-H-O" distance="1.038 * angstrom ** 1"></Constraint>
+        <Constraint smirks="[#1:1]-[#8X2H2+0]-[#1:2]" id="c-tip3p-H-O-H" distance="1.718036918 * angstrom ** 1"></Constraint>
+    </Constraints>
+    <MPIDMultipole version="0.3" coulomb14scale="0.5">
+        <Multipole smirks="[#1]-[#8X2H2+0:1]-[#1]" c0="-0.676526 * elementary_charge ** 1"></Multipole>
+        <Multipole smirks="[#1:1]-[#8X2H2+0]-[#1]" c0="0.338263 * elementary_charge ** 1"></Multipole>
+    </MPIDMultipole>
+    <MPIDPolarizability version="0.3">
+        <Polarizability smirks="[#1:1]-[#8X2H2+0]-[#1]" polarizability="0.20737853159826747 * angstrom ** 3"></Polarizability>
+        <Polarizability smirks="[#1]-[#8X2H2+0:1]-[#1]" polarizability="0.9967969554882719 * angstrom ** 3"></Polarizability>
+    </MPIDPolarizability>
+</SMIRNOFF>
