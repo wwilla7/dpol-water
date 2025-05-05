@@ -14,4 +14,9 @@ To run dPol water with MPIDForce, you need:
 [MPIFOpenMMPlugin](https://github.com/andysim/MPIDOpenMMPlugin),
 [openff-toolkit](https://github.com/openforcefield/openff-toolkit),
 [openff-interchange](https://github.com/openforcefield/openff-interchange),
-[dPol_plugin](https://github.com/wwilla7/dPol_plugin).
+[dPol_plugin](https://github.com/wwilla7/dPol_plugin),
+[dpolfit](https://github.com/wwilla7/dpolfit) (Optional)
+
+
+### Publications
+1. A Simple, Polarizable, Rigid, 3-Point Water Model Using the Direct Polarization Approximation. Liangyue W. Drew and Michael K. Gilson. ChemRxiv. 2025; [DOI:10.26434/chemrxiv-2025-b18hr](https://doi.org/10.26434/chemrxiv-2025-b18hr). This content is a preprint and has not been peer-reviewed.
